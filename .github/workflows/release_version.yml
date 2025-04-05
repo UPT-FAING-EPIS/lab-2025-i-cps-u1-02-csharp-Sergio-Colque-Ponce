@@ -1,0 +1,25 @@
+name: Release Version
+
+env:
+  DOTNET_VERSION: '8.0' # la versión de .NET
+on: push
+jobs:
+  security:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+    - uses: snyk/actions/setup@master
+    - name: Configurando la versión de NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: ${{ env.DOTNET_VERSION }}
+    - name: Build
+      run: dotnet build Bank.WebApi/Bank.WebApi.csproj -c Release
+
+    - name: Create Release Package
+      run: dotnet pack Bank.WebApi/Bank.WebApi.csproj -c Release -o out
+    - name: Publish Release
+      uses: softprops/action-gh-release@v1
+      with:
+        files: out/*.nupkg

@@ -1,0 +1,33 @@
+name: Package NuGet
+env:
+  DOTNET_VERSION: '8.0' # la versión de .NET
+on: push
+jobs:
+  security:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+    - uses: snyk/actions/setup@master
+    - name: Configurando la versión de NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: ${{ env.DOTNET_VERSION }}
+
+    - name: Install SonarScanner
+      run: dotnet tool install --global dotnet-sonarscanner
+
+    - name: Iniciar Analisis SONARQUB
+      run: dotnet-sonarscanner begin /k:"PJ_TOKEN" /o:"sergio-colque-ponce" /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
+
+    - name: Correr Tests
+      run: dotnet test --collect:"XPlat Code Coverage"
+
+    - name: Terminar analisis SONAR
+      run: dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
+
+    - name: Pack NuGet
+      run: dotnet pack src/Bank.Domain/Bank.Domain.csproj -c Release -o out
+
+    - name: Publish to GitHub Packages
+      run: dotnet nuget push out/*.nupkg -k ${{ secrets.GITHUB_TOKEN }} -s https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json
