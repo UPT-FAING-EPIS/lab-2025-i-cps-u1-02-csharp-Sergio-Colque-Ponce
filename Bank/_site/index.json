@@ -1,4 +1,9 @@
 {
+  "Cobertura/SummaryGithub.html": {
+    "href": "Cobertura/SummaryGithub.html",
+    "title": "Summary of Coverage | Bank App",
+    "summary": "Summary of Coverage Este archivo proporciona el resumen de la cobertura de pruebas, incluyendo las métricas y estadísticas relevantes. Coverage Results Cobertura total: 85% Módulos cubiertos: Bank.WebApi, Bank.WebApi.Test"
+  },
   "disenio.html": {
     "href": "disenio.html",
     "title": "| Bank App",
