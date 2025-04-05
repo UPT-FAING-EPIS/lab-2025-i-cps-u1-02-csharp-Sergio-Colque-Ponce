@@ -15,10 +15,10 @@ jobs:
       with:
         dotnet-version: ${{ env.DOTNET_VERSION }}
     - name: Build
-      run: dotnet build Bank.WebApi/Bank.WebApi.csproj -c Release
+      run: dotnet build Bank/Bank.WebApi/Bank.WebApi.csproj -c Release
 
     - name: Create Release Package
-      run: dotnet pack Bank.WebApi/Bank.WebApi.csproj -c Release -o out
+      run: dotnet pack Bank/Bank.WebApi/Bank.WebApi.csproj -c Release -o out
     - name: Publish Release
       uses: softprops/action-gh-release@v1
       with:
