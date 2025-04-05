@@ -11,19 +11,17 @@ jobs:
       uses: actions/setup-dotnet@v4
       with:
         dotnet-version: 8.0
-    - name: Movernos a Bank
-      run: cd Bank
     - name: Init DocFx
       run: dotnet tool update -g docfx
 
     - name: Generar metadata
-      run: docfx metadata docfx.json
+      run: docfx metadata Bank/docfx.json
 
     - name: Build Doc Site
-      run: docfx build docfx.json
+      run: docfx build Bank/docfx.json
 
     - name: Subir GitHub Pages
       uses: peaceiris/actions-gh-pages@v4
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./_site
+        publish_dir: Bank/_site
