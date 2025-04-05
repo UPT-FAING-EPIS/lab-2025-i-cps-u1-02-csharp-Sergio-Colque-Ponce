@@ -1,0 +1,40 @@
+name: Snyk Analysis
+env:
+  DOTNET_VERSION: '8.0' # la versión de .NET
+on: push
+jobs:
+  security:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+    - uses: snyk/actions/setup@master
+    - name: Configurando la versión de NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: ${{ env.DOTNET_VERSION }}
+    - name: Snyk monitor
+      run: snyk code test --sarif-file-output=snyk.sarif
+      env:
+        SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+    - name: Upload result to GitHub Code Scanning
+      uses: github/codeql-action/upload-sarif@v3
+      with:
+        sarif_file: snyk.sarif
+    - name: Instalar Snyk
+      run: |
+        scoop bucket add snyk https://github.com/snyk/scoop-snyk
+        scoop install snyk
+    - name: Instalar Snyk to html
+      run: |
+        scoop install nvm
+        nvm install lts
+        nvm use lts
+        npm install snyk-to-html -g
+    - name: Actividad 1: Snyk a HTML
+      run: snyk test --json | snyk-to-html -o snyk-report.html
+    - name: Upload Snyk Report
+      uses: actions/upload-artifact@v3
+      with:
+        name: snyk-report
+        path: snyk-report.html
