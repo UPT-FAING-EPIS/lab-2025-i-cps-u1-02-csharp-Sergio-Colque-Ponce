@@ -1,4 +1,4 @@
-name: Snyk Analysis
+name: Actividad 1 - Snyk Analysis y Artifact
 env:
   DOTNET_VERSION: '8.0' # la versión de .NET
 on: push
