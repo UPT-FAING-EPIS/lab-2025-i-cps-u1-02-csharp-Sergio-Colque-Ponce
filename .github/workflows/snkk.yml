@@ -14,15 +14,9 @@ jobs:
       with:
         dotnet-version: ${{ env.DOTNET_VERSION }}
     - name: Instalar Snyk
-      run: |
-        scoop bucket add snyk https://github.com/snyk/scoop-snyk
-        scoop install snyk
+      run: npm install -g snyk
     - name: Instalar Snyk to html
-      run: |
-        scoop install nvm
-        nvm install lts
-        nvm use lts
-        npm install snyk-to-html -g
+      run: npm install snyk-to-html -g
     - name: Snyk monitor
       run: snyk code test --sarif-file-output=snyk.sarif
       env:
