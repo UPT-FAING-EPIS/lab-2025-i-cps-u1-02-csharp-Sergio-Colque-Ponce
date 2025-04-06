@@ -30,7 +30,7 @@ jobs:
           /d:sonar.host.url="https://sonarcloud.io" \
           /d:sonar.cs.opencover.reportsPaths="**/coverage.opencover.xml" \
           /d:sonar.qualitygate.wait=true \
-          /d:sonar.exclusions="**/Program.cs"
+          /d:sonar.exclusions="**/Program.cs,**/code-test-results.html"
     - name: Run tests with coverage
       run: dotnet test "Bank/Bank.sln" --collect:"XPlat Code Coverage;Format=opencover"
     - name: Build solution

@@ -1,4 +1,4 @@
-name: Publicar Documentacion Clases con docfx
+name: Actividad 2 - Publicar Documentacion Clases con docfx
 
 on: push
 jobs:
