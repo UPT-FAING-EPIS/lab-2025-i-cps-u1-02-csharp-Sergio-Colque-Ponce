@@ -102,6 +102,58 @@ references:
   commentId: T:Bank.WebApi.Tests.BankAccountTests
   fullName: Bank.WebApi.Tests.BankAccountTests
   nameWithType: BankAccountTests
+- uid: Bank.WebApi.Tests.BankAccountTests.Credit_WithNegativeAmount_ThrowsArgumentOutOfRangeException
+  name: Credit_WithNegativeAmount_ThrowsArgumentOutOfRangeException()
+  href: docs/Bank.WebApi.Tests.BankAccountTests.html#Bank_WebApi_Tests_BankAccountTests_Credit_WithNegativeAmount_ThrowsArgumentOutOfRangeException
+  commentId: M:Bank.WebApi.Tests.BankAccountTests.Credit_WithNegativeAmount_ThrowsArgumentOutOfRangeException
+  fullName: Bank.WebApi.Tests.BankAccountTests.Credit_WithNegativeAmount_ThrowsArgumentOutOfRangeException()
+  nameWithType: BankAccountTests.Credit_WithNegativeAmount_ThrowsArgumentOutOfRangeException()
+- uid: Bank.WebApi.Tests.BankAccountTests.Credit_WithNegativeAmount_ThrowsArgumentOutOfRangeException*
+  name: Credit_WithNegativeAmount_ThrowsArgumentOutOfRangeException
+  href: docs/Bank.WebApi.Tests.BankAccountTests.html#Bank_WebApi_Tests_BankAccountTests_Credit_WithNegativeAmount_ThrowsArgumentOutOfRangeException_
+  commentId: Overload:Bank.WebApi.Tests.BankAccountTests.Credit_WithNegativeAmount_ThrowsArgumentOutOfRangeException
+  isSpec: "True"
+  fullName: Bank.WebApi.Tests.BankAccountTests.Credit_WithNegativeAmount_ThrowsArgumentOutOfRangeException
+  nameWithType: BankAccountTests.Credit_WithNegativeAmount_ThrowsArgumentOutOfRangeException
+- uid: Bank.WebApi.Tests.BankAccountTests.Credit_WithPositiveAmount_IncreasesBalance
+  name: Credit_WithPositiveAmount_IncreasesBalance()
+  href: docs/Bank.WebApi.Tests.BankAccountTests.html#Bank_WebApi_Tests_BankAccountTests_Credit_WithPositiveAmount_IncreasesBalance
+  commentId: M:Bank.WebApi.Tests.BankAccountTests.Credit_WithPositiveAmount_IncreasesBalance
+  fullName: Bank.WebApi.Tests.BankAccountTests.Credit_WithPositiveAmount_IncreasesBalance()
+  nameWithType: BankAccountTests.Credit_WithPositiveAmount_IncreasesBalance()
+- uid: Bank.WebApi.Tests.BankAccountTests.Credit_WithPositiveAmount_IncreasesBalance*
+  name: Credit_WithPositiveAmount_IncreasesBalance
+  href: docs/Bank.WebApi.Tests.BankAccountTests.html#Bank_WebApi_Tests_BankAccountTests_Credit_WithPositiveAmount_IncreasesBalance_
+  commentId: Overload:Bank.WebApi.Tests.BankAccountTests.Credit_WithPositiveAmount_IncreasesBalance
+  isSpec: "True"
+  fullName: Bank.WebApi.Tests.BankAccountTests.Credit_WithPositiveAmount_IncreasesBalance
+  nameWithType: BankAccountTests.Credit_WithPositiveAmount_IncreasesBalance
+- uid: Bank.WebApi.Tests.BankAccountTests.Debit_WithAmountGreaterThanBalance_ThrowsArgumentOutOfRangeException
+  name: Debit_WithAmountGreaterThanBalance_ThrowsArgumentOutOfRangeException()
+  href: docs/Bank.WebApi.Tests.BankAccountTests.html#Bank_WebApi_Tests_BankAccountTests_Debit_WithAmountGreaterThanBalance_ThrowsArgumentOutOfRangeException
+  commentId: M:Bank.WebApi.Tests.BankAccountTests.Debit_WithAmountGreaterThanBalance_ThrowsArgumentOutOfRangeException
+  fullName: Bank.WebApi.Tests.BankAccountTests.Debit_WithAmountGreaterThanBalance_ThrowsArgumentOutOfRangeException()
+  nameWithType: BankAccountTests.Debit_WithAmountGreaterThanBalance_ThrowsArgumentOutOfRangeException()
+- uid: Bank.WebApi.Tests.BankAccountTests.Debit_WithAmountGreaterThanBalance_ThrowsArgumentOutOfRangeException*
+  name: Debit_WithAmountGreaterThanBalance_ThrowsArgumentOutOfRangeException
+  href: docs/Bank.WebApi.Tests.BankAccountTests.html#Bank_WebApi_Tests_BankAccountTests_Debit_WithAmountGreaterThanBalance_ThrowsArgumentOutOfRangeException_
+  commentId: Overload:Bank.WebApi.Tests.BankAccountTests.Debit_WithAmountGreaterThanBalance_ThrowsArgumentOutOfRangeException
+  isSpec: "True"
+  fullName: Bank.WebApi.Tests.BankAccountTests.Debit_WithAmountGreaterThanBalance_ThrowsArgumentOutOfRangeException
+  nameWithType: BankAccountTests.Debit_WithAmountGreaterThanBalance_ThrowsArgumentOutOfRangeException
+- uid: Bank.WebApi.Tests.BankAccountTests.Debit_WithNegativeAmount_ThrowsArgumentOutOfRangeException
+  name: Debit_WithNegativeAmount_ThrowsArgumentOutOfRangeException()
+  href: docs/Bank.WebApi.Tests.BankAccountTests.html#Bank_WebApi_Tests_BankAccountTests_Debit_WithNegativeAmount_ThrowsArgumentOutOfRangeException
+  commentId: M:Bank.WebApi.Tests.BankAccountTests.Debit_WithNegativeAmount_ThrowsArgumentOutOfRangeException
+  fullName: Bank.WebApi.Tests.BankAccountTests.Debit_WithNegativeAmount_ThrowsArgumentOutOfRangeException()
+  nameWithType: BankAccountTests.Debit_WithNegativeAmount_ThrowsArgumentOutOfRangeException()
+- uid: Bank.WebApi.Tests.BankAccountTests.Debit_WithNegativeAmount_ThrowsArgumentOutOfRangeException*
+  name: Debit_WithNegativeAmount_ThrowsArgumentOutOfRangeException
+  href: docs/Bank.WebApi.Tests.BankAccountTests.html#Bank_WebApi_Tests_BankAccountTests_Debit_WithNegativeAmount_ThrowsArgumentOutOfRangeException_
+  commentId: Overload:Bank.WebApi.Tests.BankAccountTests.Debit_WithNegativeAmount_ThrowsArgumentOutOfRangeException
+  isSpec: "True"
+  fullName: Bank.WebApi.Tests.BankAccountTests.Debit_WithNegativeAmount_ThrowsArgumentOutOfRangeException
+  nameWithType: BankAccountTests.Debit_WithNegativeAmount_ThrowsArgumentOutOfRangeException
 - uid: Bank.WebApi.Tests.BankAccountTests.Debit_WithValidAmount_UpdatesBalance
   name: Debit_WithValidAmount_UpdatesBalance()
   href: docs/Bank.WebApi.Tests.BankAccountTests.html#Bank_WebApi_Tests_BankAccountTests_Debit_WithValidAmount_UpdatesBalance
