@@ -8,5 +8,9 @@
   "Bank.WebApi.Models.BankAccount.Debit(System.Double)": "Bank.WebApi.Models.BankAccount.yml",
   "Bank.WebApi.Tests": "Bank.WebApi.Tests.yml",
   "Bank.WebApi.Tests.BankAccountTests": "Bank.WebApi.Tests.BankAccountTests.yml",
+  "Bank.WebApi.Tests.BankAccountTests.Credit_WithNegativeAmount_ThrowsArgumentOutOfRangeException": "Bank.WebApi.Tests.BankAccountTests.yml",
+  "Bank.WebApi.Tests.BankAccountTests.Credit_WithPositiveAmount_IncreasesBalance": "Bank.WebApi.Tests.BankAccountTests.yml",
+  "Bank.WebApi.Tests.BankAccountTests.Debit_WithAmountGreaterThanBalance_ThrowsArgumentOutOfRangeException": "Bank.WebApi.Tests.BankAccountTests.yml",
+  "Bank.WebApi.Tests.BankAccountTests.Debit_WithNegativeAmount_ThrowsArgumentOutOfRangeException": "Bank.WebApi.Tests.BankAccountTests.yml",
   "Bank.WebApi.Tests.BankAccountTests.Debit_WithValidAmount_UpdatesBalance": "Bank.WebApi.Tests.BankAccountTests.yml"
 }

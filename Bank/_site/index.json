@@ -2,7 +2,7 @@
   "Cobertura/SummaryGithub.html": {
     "href": "Cobertura/SummaryGithub.html",
     "title": "Summary | Bank App",
-    "summary": "Summary Summary Generated on: 5/04/2025 - 16:11:32 Coverage date: 5/04/2025 - 16:09:06 - 5/04/2025 - 16:09:50 Parser: MultiReport (2x Cobertura) Assemblies: 1 Classes: 3 Files: 2 Line coverage: 24.4% (12 of 49) Covered lines: 12 Uncovered lines: 37 Coverable lines: 49 Total lines: 72 Branch coverage: 0% (0 of 4) Covered branches: 0 Total branches: 4 Method coverage: Feature is only available for sponsors Coverage Bank.WebApi - 24.4% Name Line Branch Bank.WebApi 24.4% 0% Bank.WebApi.Models.BankAccount 66.6% Program 0% 0% WeatherForecast 0%"
+    "summary": "Summary Summary Generated on: 5/04/2025 - 23:00:00 Coverage date: 5/04/2025 - 22:59:56 Parser: Cobertura Assemblies: 1 Classes: 3 Files: 2 Line coverage: 32.6% (16 of 49) Covered lines: 16 Uncovered lines: 33 Coverable lines: 49 Total lines: 72 Branch coverage: 0% (0 of 4) Covered branches: 0 Total branches: 4 Method coverage: Feature is only available for sponsors Coverage Bank.WebApi - 32.6% Name Line Branch Bank.WebApi 32.6% 0% Bank.WebApi.Models.BankAccount 88.8% Program 0% 0% WeatherForecast 0%"
   },
   "disenio.html": {
     "href": "disenio.html",
@@ -22,7 +22,7 @@
   "docs/Bank.WebApi.Tests.BankAccountTests.html": {
     "href": "docs/Bank.WebApi.Tests.BankAccountTests.html",
     "title": "Class BankAccountTests | Bank App",
-    "summary": "Class BankAccountTests Namespace Bank.WebApi.Tests Assembly Bank.WebApi.Tests.dll public class BankAccountTests Inheritance object BankAccountTests Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods Debit_WithValidAmount_UpdatesBalance() [Test] public void Debit_WithValidAmount_UpdatesBalance()"
+    "summary": "Class BankAccountTests Namespace Bank.WebApi.Tests Assembly Bank.WebApi.Tests.dll public class BankAccountTests Inheritance object BankAccountTests Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods Credit_WithNegativeAmount_ThrowsArgumentOutOfRangeException() [Test] public void Credit_WithNegativeAmount_ThrowsArgumentOutOfRangeException() Credit_WithPositiveAmount_IncreasesBalance() [Test] public void Credit_WithPositiveAmount_IncreasesBalance() Debit_WithAmountGreaterThanBalance_ThrowsArgumentOutOfRangeException() [Test] public void Debit_WithAmountGreaterThanBalance_ThrowsArgumentOutOfRangeException() Debit_WithNegativeAmount_ThrowsArgumentOutOfRangeException() [Test] public void Debit_WithNegativeAmount_ThrowsArgumentOutOfRangeException() Debit_WithValidAmount_UpdatesBalance() [Test] public void Debit_WithValidAmount_UpdatesBalance()"
   },
   "docs/Bank.WebApi.Tests.html": {
     "href": "docs/Bank.WebApi.Tests.html",

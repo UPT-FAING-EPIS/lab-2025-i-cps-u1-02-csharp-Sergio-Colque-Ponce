@@ -3,15 +3,15 @@
 
 |||
 |:---|:---|
-| Generated on: | 5/04/2025 - 16:11:32 |
-| Coverage date: | 5/04/2025 - 16:09:06 - 5/04/2025 - 16:09:50 |
-| Parser: | MultiReport (2x Cobertura) |
+| Generated on: | 5/04/2025 - 23:00:00 |
+| Coverage date: | 5/04/2025 - 22:59:56 |
+| Parser: | Cobertura |
 | Assemblies: | 1 |
 | Classes: | 3 |
 | Files: | 2 |
-| **Line coverage:** | 24.4% (12 of 49) |
-| Covered lines: | 12 |
-| Uncovered lines: | 37 |
+| **Line coverage:** | 32.6% (16 of 49) |
+| Covered lines: | 16 |
+| Uncovered lines: | 33 |
 | Coverable lines: | 49 |
 | Total lines: | 72 |
 | **Branch coverage:** | 0% (0 of 4) |
@@ -22,12 +22,12 @@
 </details>
 
 ## Coverage
-<details><summary>Bank.WebApi - 24.4%</summary>
+<details><summary>Bank.WebApi - 32.6%</summary>
 
 |**Name**|**Line**|**Branch**|
 |:---|---:|---:|
-|**Bank.WebApi**|**24.4%**|**0%**|
-|Bank.WebApi.Models.BankAccount|66.6%||
+|**Bank.WebApi**|**32.6%**|**0%**|
+|Bank.WebApi.Models.BankAccount|88.8%||
 |Program|0%|0%|
 |WeatherForecast|0%||
 
