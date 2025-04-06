@@ -13,14 +13,6 @@ jobs:
       uses: actions/setup-dotnet@v4
       with:
         dotnet-version: ${{ env.DOTNET_VERSION }}
-    - name: Snyk monitor
-      run: snyk code test --sarif-file-output=snyk.sarif
-      env:
-        SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
-    - name: Upload result to GitHub Code Scanning
-      uses: github/codeql-action/upload-sarif@v3
-      with:
-        sarif_file: snyk.sarif
     - name: Instalar Snyk
       run: |
         scoop bucket add snyk https://github.com/snyk/scoop-snyk
@@ -31,7 +23,15 @@ jobs:
         nvm install lts
         nvm use lts
         npm install snyk-to-html -g
-    - name: Actividad 1: Snyk a HTML
+    - name: Snyk monitor
+      run: snyk code test --sarif-file-output=snyk.sarif
+      env:
+        SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+    - name: Upload result to GitHub Code Scanning
+      uses: github/codeql-action/upload-sarif@v3
+      with:
+        sarif_file: snyk.sarif
+    - name: Snyk a HTML
       run: snyk test --json | snyk-to-html -o snyk-report.html
     - name: Upload Snyk Report
       uses: actions/upload-artifact@v3
