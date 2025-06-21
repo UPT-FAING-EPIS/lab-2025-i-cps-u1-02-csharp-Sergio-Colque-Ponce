@@ -25,7 +25,7 @@ jobs:
         sarif_file: snyk.sarif
     - name: Snyk a HTML
       run: snyk test --json | snyk-to-html -o snyk-report.html
-    - name: Upload Snyk Report
+    - name: Upload Artifact Snyk Report
       uses: actions/upload-artifact@v4
       with:
         name: snyk-report
