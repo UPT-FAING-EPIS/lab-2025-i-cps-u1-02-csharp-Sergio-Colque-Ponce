@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class BankAccount | Bank App ">
       
-      
+      <meta name="description" content="Representa una cuenta bancaria con funcionalidades b&#225;sicas de d&#233;bito y cr&#233;dito.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Bank_WebApi_Models_BankAccount" data-uid="Bank.WebApi.Models.BankAccount" class="text-break">
-Class BankAccount  <a class="header-action link-secondary" title="View source" href="https://github.com/UPT-FAING-EPIS/lab-2025-i-cps-u1-02-csharp-Sergio-Colque-Ponce/blob/main/Bank/Bank.WebApi/Models/BankAccount.cs/#L3"><i class="bi bi-code-slash"></i></a>
+Class BankAccount  <a class="header-action link-secondary" title="View source" href="https://github.com/UPT-FAING-EPIS/lab-2025-i-cps-u1-02-csharp-Sergio-Colque-Ponce/blob/main/Bank/Bank.WebApi/Models/BankAccount.cs/#L11"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,8 @@ Class BankAccount  <a class="header-action link-secondary" title="View source" h
   <dl><dt>Assembly</dt><dd>Bank.WebApi.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Representa una cuenta bancaria con funcionalidades básicas de débito y crédito.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -146,6 +147,11 @@ Class BankAccount  <a class="header-action link-secondary" title="View source" h
 
 
 
+  <h2 id="Bank_WebApi_Models_BankAccount_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>Esta clase proporciona operaciones fundamentales para el manejo de cuentas bancarias,
+incluyendo validaciones para prevenir operaciones inválidas como débitos que excedan el saldo
+o montos negativos.</p>
+</div>
 
 
   <h2 class="section" id="constructors">Constructors
@@ -156,10 +162,11 @@ Class BankAccount  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Bank_WebApi_Models_BankAccount__ctor_System_String_System_Double_" data-uid="Bank.WebApi.Models.BankAccount.#ctor(System.String,System.Double)">
   BankAccount(string, double)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/UPT-FAING-EPIS/lab-2025-i-cps-u1-02-csharp-Sergio-Colque-Ponce/blob/main/Bank/Bank.WebApi/Models/BankAccount.cs/#L8"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/UPT-FAING-EPIS/lab-2025-i-cps-u1-02-csharp-Sergio-Colque-Ponce/blob/main/Bank/Bank.WebApi/Models/BankAccount.cs/#L38"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Inicializa una nueva instancia de la clase BankAccount.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -169,9 +176,11 @@ Class BankAccount  <a class="header-action link-secondary" title="View source" h
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>customerName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>El nombre del cliente propietario de la cuenta.</p>
+</dd>
     <dt><code>balance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
-    <dd></dd>
+    <dd><p>El saldo inicial de la cuenta.</p>
+</dd>
   </dl>
 
 
@@ -179,6 +188,9 @@ Class BankAccount  <a class="header-action link-secondary" title="View source" h
 
 
 
+
+  <h4 class="section" id="Bank_WebApi_Models_BankAccount__ctor_System_String_System_Double__examples">Examples</h4>
+  <pre><code class="lang-csharp">BankAccount account = new BankAccount("Juan Pérez", 1000.0);</code></pre>
 
 
 
@@ -193,10 +205,11 @@ Class BankAccount  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Bank_WebApi_Models_BankAccount_Balance" data-uid="Bank.WebApi.Models.BankAccount.Balance">
   Balance
-  <a class="header-action link-secondary" title="View source" href="https://github.com/UPT-FAING-EPIS/lab-2025-i-cps-u1-02-csharp-Sergio-Colque-Ponce/blob/main/Bank/Bank.WebApi/Models/BankAccount.cs/#L14"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/UPT-FAING-EPIS/lab-2025-i-cps-u1-02-csharp-Sergio-Colque-Ponce/blob/main/Bank/Bank.WebApi/Models/BankAccount.cs/#L54"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Obtiene el saldo actual de la cuenta.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -210,7 +223,8 @@ Class BankAccount  <a class="header-action link-secondary" title="View source" h
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
-    <dd></dd>
+    <dd><p>El saldo actual como un número de punto flotante.</p>
+</dd>
   </dl>
 
 
@@ -224,10 +238,11 @@ Class BankAccount  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Bank_WebApi_Models_BankAccount_CustomerName" data-uid="Bank.WebApi.Models.BankAccount.CustomerName">
   CustomerName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/UPT-FAING-EPIS/lab-2025-i-cps-u1-02-csharp-Sergio-Colque-Ponce/blob/main/Bank/Bank.WebApi/Models/BankAccount.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/UPT-FAING-EPIS/lab-2025-i-cps-u1-02-csharp-Sergio-Colque-Ponce/blob/main/Bank/Bank.WebApi/Models/BankAccount.cs/#L48"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Obtiene el nombre del cliente propietario de la cuenta.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -241,7 +256,8 @@ Class BankAccount  <a class="header-action link-secondary" title="View source" h
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>El nombre del cliente como una cadena de texto.</p>
+</dd>
   </dl>
 
 
@@ -259,10 +275,11 @@ Class BankAccount  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Bank_WebApi_Models_BankAccount_Credit_System_Double_" data-uid="Bank.WebApi.Models.BankAccount.Credit(System.Double)">
   Credit(double)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/UPT-FAING-EPIS/lab-2025-i-cps-u1-02-csharp-Sergio-Colque-Ponce/blob/main/Bank/Bank.WebApi/Models/BankAccount.cs/#L22"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/UPT-FAING-EPIS/lab-2025-i-cps-u1-02-csharp-Sergio-Colque-Ponce/blob/main/Bank/Bank.WebApi/Models/BankAccount.cs/#L89"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Realiza un crédito (depósito) a la cuenta bancaria.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -272,7 +289,8 @@ Class BankAccount  <a class="header-action link-secondary" title="View source" h
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>amount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
-    <dd></dd>
+    <dd><p>La cantidad a acreditar a la cuenta.</p>
+</dd>
   </dl>
 
 
@@ -281,8 +299,18 @@ Class BankAccount  <a class="header-action link-secondary" title="View source" h
 
 
 
+  <h4 class="section" id="Bank_WebApi_Models_BankAccount_Credit_System_Double__examples">Examples</h4>
+  <pre><code class="lang-csharp">BankAccount account = new BankAccount("Juan Pérez", 1000.0);
+account.Credit(500.0); // Saldo resultante: 1500.0</code></pre>
 
 
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></dt>
+    <dd><p>Se lanza cuando el monto es negativo.</p>
+</dd>
+  </dl>
 
 
 
@@ -290,10 +318,11 @@ Class BankAccount  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Bank_WebApi_Models_BankAccount_Debit_System_Double_" data-uid="Bank.WebApi.Models.BankAccount.Debit(System.Double)">
   Debit(double)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/UPT-FAING-EPIS/lab-2025-i-cps-u1-02-csharp-Sergio-Colque-Ponce/blob/main/Bank/Bank.WebApi/Models/BankAccount.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/UPT-FAING-EPIS/lab-2025-i-cps-u1-02-csharp-Sergio-Colque-Ponce/blob/main/Bank/Bank.WebApi/Models/BankAccount.cs/#L69"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Realiza un débito (retiro) de la cuenta bancaria.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -303,7 +332,8 @@ Class BankAccount  <a class="header-action link-secondary" title="View source" h
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>amount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
-    <dd></dd>
+    <dd><p>La cantidad a debitar de la cuenta.</p>
+</dd>
   </dl>
 
 
@@ -312,8 +342,18 @@ Class BankAccount  <a class="header-action link-secondary" title="View source" h
 
 
 
+  <h4 class="section" id="Bank_WebApi_Models_BankAccount_Debit_System_Double__examples">Examples</h4>
+  <pre><code class="lang-csharp">BankAccount account = new BankAccount("Juan Pérez", 1000.0);
+account.Debit(250.0); // Saldo resultante: 750.0</code></pre>
 
 
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></dt>
+    <dd><p>Se lanza cuando el monto es mayor que el saldo disponible o cuando el monto es negativo.</p>
+</dd>
+  </dl>
 
 
 
@@ -321,7 +361,7 @@ Class BankAccount  <a class="header-action link-secondary" title="View source" h
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/UPT-FAING-EPIS/lab-2025-i-cps-u1-02-csharp-Sergio-Colque-Ponce/blob/main/Bank/Bank.WebApi/Models/BankAccount.cs/#L3" class="edit-link">Edit this page</a>
+          <a href="https://github.com/UPT-FAING-EPIS/lab-2025-i-cps-u1-02-csharp-Sergio-Colque-Ponce/blob/main/Bank/Bank.WebApi/Models/BankAccount.cs/#L11" class="edit-link">Edit this page</a>
         </div>
 
 
